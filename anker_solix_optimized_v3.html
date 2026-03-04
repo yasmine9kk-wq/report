@@ -1,0 +1,2508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anker SOLIX Sale - Up to 65% Off Power Stations & Home Energy Systems</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #333;
+            background: #ffffff;
+        }
+
+        /* 顶部导航 */
+        .top-bar {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 0.6rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .top-bar span {
+            color: #00DB84;
+        }
+
+        .header {
+            background: white;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: none;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #2E4E49;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: #444;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #2E4E49;
+        }
+
+        /* Hero区域 - 双品类选择 */
+        .hero {
+            background: linear-gradient(135deg, #2E4E49 0%, #1a2f2b 100%);
+            color: white;
+            padding: 1.5rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-discount {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #00DB84;
+            margin: 0.5rem 0;
+            text-shadow: 0 4px 20px rgba(0,219,132,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+        }
+
+        .hero-timer {
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .timer-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-right: 1rem;
+        }
+
+        .timer-value {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #00DB84;
+        }
+
+        /* 双品类入口按钮 - 紧凑版 */
+        .category-selector {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 50px;
+            padding: 1rem 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 3px solid rgba(255,255,255,0.3);
+            min-width: 280px;
+        }
+
+        .category-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            border-color: #00DB84;
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+        }
+
+        .category-content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #2E4E49;
+            margin-bottom: 0.2rem;
+        }
+
+        .category-desc {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        .category-arrow {
+            font-size: 1.5rem;
+            color: #2E4E49;
+            font-weight: 900;
+        }
+
+        /* Best Sellers区域 */
+        .bestsellers-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        /* 产品区域 */
+        .products-section {
+            padding: 4rem 2rem;
+            background: #f8f8f8;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #2E4E49;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* 分类过滤器 */
+        .category-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: white;
+            padding: 1.2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .filter-btn {
+            background: white;
+            border: 2px solid #e5e5e5;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #444;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #2E4E49;
+            color: white;
+            border-color: #2E4E49;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(46,78,73,0.2);
+        }
+
+        /* 产品网格 */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* 平板端 - 3列 */
+        @media (max-width: 1200px) {
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
+        /* 1+4布局容器 */
+        .featured-layout {
+            max-width: 1400px;
+            margin: 0 auto 2rem;
+        }
+
+        /* 主推产品 - 左图右文 */
+        .featured-product {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            align-items: center;
+        }
+
+        .featured-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 320px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .featured-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .featured-title {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #2E4E49;
+            line-height: 1.2;
+        }
+
+        .featured-badge-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .featured-specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .featured-spec {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-spec-label {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 0.2rem;
+        }
+
+        .featured-spec-value {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #2E4E49;
+        }
+
+        .featured-description {
+            color: #666;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .featured-price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+            margin-top: 0.3rem;
+        }
+
+        .featured-price-current {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #000;
+        }
+
+        .featured-price-original {
+            font-size: 1.3rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .featured-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.8rem;
+        }
+
+        .btn-featured-primary {
+            flex: 2;
+            background: #000;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-featured-primary:hover {
+            background: #2E4E49;
+            transform: scale(1.02);
+        }
+
+        .btn-featured-secondary {
+            flex: 1;
+            background: white;
+            color: #2E4E49;
+            border: 2px solid #2E4E49;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-featured-secondary:hover {
+            background: #2E4E49;
+            color: white;
+        }
+
+        /* 其他产品网格 */
+        .other-products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        /* 分类标题 */
+        .category-section-title {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #2E4E49;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* 产品分类区块 */
+        .product-category-block {
+            display: block;
+            margin-bottom: 4rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #e5e5e5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+        .product-badges {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+
+        .badge {
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-block;
+        }
+
+        .badge-discount {
+            background: #FA4500;
+            color: white;
+        }
+
+        .badge-popular {
+            background: #FFD700;
+            color: #000;
+        }
+
+        .badge-value {
+            background: #00DB84;
+            color: white;
+        }
+
+        .product-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-category {
+            color: #00DB84;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-name {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #2E4E49;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .product-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-tag {
+            background: #f0f0f0;
+            padding: 0.3rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .product-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .spec-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .spec-label {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 0.2rem;
+        }
+
+        .spec-value {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #2E4E49;
+        }
+
+        .product-price {
+            margin-bottom: 1.5rem;
+        }
+
+        .price-current {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #000;
+        }
+
+        .price-original {
+            font-size: 1.2rem;
+            color: #999;
+            text-decoration: line-through;
+            margin-left: 0.5rem;
+        }
+
+        .price-save {
+            display: block;
+            color: #FA4500;
+            font-weight: 700;
+            margin-top: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1rem;
+        }
+
+        .rating-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: auto;
+        }
+
+        .btn-add-cart {
+            flex: 2;
+            background: #000;
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn-add-cart:hover {
+            background: #2E4E49;
+            transform: scale(1.02);
+        }
+
+        .btn-learn-more {
+            flex: 1;
+            background: white;
+            color: #2E4E49;
+            border: 2px solid #2E4E49;
+            padding: 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .btn-learn-more:hover {
+            background: #2E4E49;
+            color: white;
+        }
+
+        /* 对比表 */
+        .comparison-section {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .comparison-table-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .comparison-table thead {
+            background: #2E4E49;
+            color: white;
+        }
+
+        .comparison-table th {
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .table-feature {
+            font-weight: 700;
+            color: #2E4E49;
+        }
+
+        .table-highlight {
+            background: #f0fdf4;
+            font-weight: 700;
+            color: #00DB84;
+        }
+
+        /* 信任标签区 */
+        .trust-section {
+            padding: 3rem 2rem;
+            background: #f8f8f8;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .trust-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .trust-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #2E4E49;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-desc {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .footer-column a {
+            display: block;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: #00DB84;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-discount {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-timer {
+                padding: 0.6rem 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .timer-label {
+                font-size: 0.8rem;
+            }
+
+            .timer-value {
+                font-size: 1.2rem;
+            }
+
+            .category-selector {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .category-card {
+                min-width: auto;
+                width: 100%;
+                padding: 1rem 1.5rem;
+            }
+
+            .category-icon {
+                font-size: 2rem;
+            }
+
+            .category-title {
+                font-size: 1.1rem;
+            }
+
+            .category-desc {
+                font-size: 0.8rem;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .product-card {
+                font-size: 0.9rem;
+            }
+
+            .product-image-wrapper {
+                height: 200px;
+                padding: 1rem;
+            }
+
+            .product-info {
+                padding: 1rem;
+            }
+
+            .product-name {
+                font-size: 1rem;
+            }
+
+            .product-specs {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+                padding: 0.8rem;
+            }
+
+            .spec-label {
+                font-size: 0.7rem;
+            }
+
+            .spec-value {
+                font-size: 0.85rem;
+            }
+
+            .price-current {
+                font-size: 1.5rem;
+            }
+
+            .price-original {
+                font-size: 1rem;
+            }
+
+            .product-features {
+                gap: 0.3rem;
+            }
+
+            .feature-tag {
+                font-size: 0.7rem;
+                padding: 0.2rem 0.5rem;
+            }
+
+            .badge {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.7rem;
+            }
+
+            .product-rating {
+                font-size: 0.8rem;
+            }
+
+            .btn-add-cart {
+                font-size: 0.85rem;
+                padding: 0.8rem;
+            }
+
+            .btn-learn-more {
+                font-size: 0.8rem;
+                padding: 0.8rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .product-actions {
+                flex-direction: column;
+            }
+
+            .btn-learn-more {
+                flex: 1;
+            }
+        }
+
+        /* 超小屏幕 - 1列 */
+        @media (max-width: 480px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-filters {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                font-size: 0.8rem;
+                padding: 0.6rem 1.2rem;
+            }
+
+            .other-products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 移动端1+4布局优化 */
+        @media (max-width: 768px) {
+            .featured-product {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem;
+            }
+
+            .featured-image-wrapper {
+                height: 250px;
+                padding: 1rem;
+            }
+
+            .featured-info {
+                gap: 0.8rem;
+            }
+
+            .featured-title {
+                font-size: 1.5rem;
+            }
+
+            .featured-spec-value {
+                font-size: 1.2rem;
+            }
+
+            .featured-description {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+
+            .featured-price-current {
+                font-size: 1.8rem;
+            }
+
+            .featured-price-original {
+                font-size: 1.1rem;
+            }
+
+            .btn-featured-primary,
+            .btn-featured-secondary {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.95rem;
+            }
+
+            .featured-actions {
+                flex-direction: column;
+            }
+
+            .other-products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .category-section-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* 隐藏类 */
+        .hidden {
+            display: none !important;
+        }
+
+        /* 产品分类容器 */
+        .product-category {
+            display: none;
+        }
+
+        .product-category.active {
+            display: block;
+        }
+
+        /* 侧边固定导航 - PPS/HES切换 */
+        .sidebar-nav {
+            position: fixed;
+            left: 1.5rem;
+            top: 78%;
+            transform: translateY(-50%);
+            z-index: 998;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .sidebar-nav.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .sidebar-nav-btn {
+            background: white;
+            border: 2px solid #e5e5e5;
+            border-radius: 50px;
+            padding: 0.6rem 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: #444;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            white-space: nowrap;
+        }
+
+        .sidebar-nav-btn:hover {
+            background: #2E4E49;
+            color: white;
+            border-color: #2E4E49;
+            transform: translateX(5px);
+        }
+
+        .sidebar-nav-btn.active {
+            background: #2E4E49;
+            color: white;
+            border-color: #2E4E49;
+        }
+
+        /* 移动端导航 - 更小尺寸 */
+        @media (max-width: 768px) {
+            .sidebar-nav {
+                left: 0.5rem;
+                top: 80%;
+                gap: 0.4rem;
+            }
+
+            .sidebar-nav-btn {
+                padding: 0.4rem 0.7rem;
+                font-size: 0.65rem;
+                gap: 0.3rem;
+                border-width: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 侧边固定导航 -->
+    <div class="sidebar-nav" id="sidebarNav">
+        <button class="sidebar-nav-btn active" onclick="scrollToSection('products')" data-section="products">
+            ⚡ PPS
+        </button>
+        <button class="sidebar-nav-btn" onclick="scrollToSection('home-energy')" data-section="home-energy">
+            🏠 HES
+        </button>
+    </div>
+    <!-- 顶部横幅 -->
+    <div class="top-bar">
+        ⚡ Limited Time Offer: Up to <span>65% OFF</span> + Free Shipping on Orders Over $99
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo">ANKER SOLIX</a>
+            <nav class="nav-links">
+                <a href="#bestsellers" class="nav-link">Shop All</a>
+                <a href="#comparison" class="nav-link">Compare</a>
+                <a href="#" class="nav-link">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero区域 - 双品类选择 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Power Your Life, Save Big</h1>
+            <div class="hero-discount">UP TO 65% OFF</div>
+            <p class="hero-subtitle">Premium Power Stations & Home Energy Systems</p>
+
+            <div class="hero-timer">
+                <span class="timer-label">⏰ Sale Ends In:</span>
+                <span class="timer-value" id="countdown">23:59:45</span>
+            </div>
+
+            <div class="category-selector">
+                <div class="category-card" onclick="showCategory('portable')">
+                    <div class="category-icon">⚡</div>
+                    <div class="category-content">
+                        <h2 class="category-title">Portable Power</h2>
+                        <p class="category-desc">Outdoor, Emergency & RV</p>
+                    </div>
+                    <div class="category-arrow">→</div>
+                </div>
+
+                <div class="category-card" onclick="showCategory('home')">
+                    <div class="category-icon">🏠</div>
+                    <div class="category-content">
+                        <h2 class="category-title">Home Energy</h2>
+                        <p class="category-desc">Whole Home Backup</p>
+                    </div>
+                    <div class="category-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers区域 -->
+    <section class="bestsellers-section" id="bestsellers">
+        <div class="section-header">
+            <h2 class="section-title">🔥 Best Sellers</h2>
+            <p class="section-subtitle">Most popular power stations - loved by thousands</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- F3800 Plus -->
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-badges">
+                        <span class="badge badge-discount">-58%</span>
+                        <span class="badge badge-popular">⭐ Most Popular</span>
+                    </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="F3800 Plus" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">1 WEEK+ KIT</div>
+                    <h3 class="product-name">Anker SOLIX F3800 Plus</h3>
+
+                    <div class="product-features">
+                        <span class="feature-tag">🏠 4-Person Home</span>
+                        <span class="feature-tag">📅 7-10 Days</span>
+                    </div>
+
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity</span>
+                            <span class="spec-value">3,840Wh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Max Output</span>
+                            <span class="spec-value">6,000W</span>
+                        </div>
+                    </div>
+
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">4.8 (3,240)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price-current">$1,699</span>
+                        <span class="price-original">$3,999</span>
+                        <span class="price-save">💰 Save $2,300</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-add-cart">🛒 Add to Cart</button>
+                        <a href="#" class="btn-learn-more">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 767 -->
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-badges">
+                        <span class="badge badge-discount">-50%</span>
+                        <span class="badge badge-popular">⭐ Top Rated</span>
+                    </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="767" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">3-5 DAYS BACKUP</div>
+                    <h3 class="product-name">Anker 767</h3>
+
+                    <div class="product-features">
+                        <span class="feature-tag">🏕️ Weekend</span>
+                        <span class="feature-tag">🏠 Small Home</span>
+                    </div>
+
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity</span>
+                            <span class="spec-value">2,048Wh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Max Output</span>
+                            <span class="spec-value">2,400W</span>
+                        </div>
+                    </div>
+
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">4.9 (2,450)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price-current">$999</span>
+                        <span class="price-original">$1,999</span>
+                        <span class="price-save">💰 Save $1,000</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-add-cart">🛒 Add to Cart</button>
+                        <a href="#" class="btn-learn-more">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 757 -->
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-badges">
+                        <span class="badge badge-discount">-48%</span>
+                        <span class="badge badge-value">💎 Best Value</span>
+                    </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="757" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">3-5 DAYS BACKUP</div>
+                    <h3 class="product-name">Anker 757 PowerHouse</h3>
+
+                    <div class="product-features">
+                        <span class="feature-tag">🎣 Outdoor</span>
+                        <span class="feature-tag">🚗 Car Camp</span>
+                    </div>
+
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity</span>
+                            <span class="spec-value">1,229Wh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Max Output</span>
+                            <span class="spec-value">1,500W</span>
+                        </div>
+                    </div>
+
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">4.6 (1,245)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price-current">$519</span>
+                        <span class="price-original">$999</span>
+                        <span class="price-save">💰 Save $480</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-add-cart">🛒 Add to Cart</button>
+                        <a href="#" class="btn-learn-more">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 535 -->
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-badges">
+                        <span class="badge badge-discount">-40%</span>
+                        <span class="badge badge-value">🎯 Entry Level</span>
+                    </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="535" class="product-image">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">1-2 DAYS POWER</div>
+                    <h3 class="product-name">Anker 535</h3>
+
+                    <div class="product-features">
+                        <span class="feature-tag">🎒 Portable</span>
+                        <span class="feature-tag">💻 Remote Work</span>
+                    </div>
+
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Capacity</span>
+                            <span class="spec-value">512Wh</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Max Output</span>
+                            <span class="spec-value">500W</span>
+                        </div>
+                    </div>
+
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">4.5 (890)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="price-current">$299</span>
+                        <span class="price-original">$499</span>
+                        <span class="price-save">💰 Save $200</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-add-cart">🛒 Add to Cart</button>
+                        <a href="#" class="btn-learn-more">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品区域 - 按备电时长分类 -->
+    <section class="products-section" id="products">
+        <div class="section-header">
+            <h2 class="section-title">⚡ Portable Power Stations</h2>
+            <p class="section-subtitle">Choose by backup duration and power needs</p>
+        </div>
+
+        <!-- 分类过滤器 -->
+        <div class="category-filters">
+            <button class="filter-btn active" onclick="filterProducts('week-plus')">📅 1 Week+ Backup</button>
+            <button class="filter-btn" onclick="filterProducts('3-5days')">🏠 3-5 Days Backup</button>
+            <button class="filter-btn" onclick="filterProducts('1-2days')">⚡ 1-2 Days Power</button>
+        </div>
+
+        <!-- 1 Week+ Backup 板块 -->
+        <div class="product-category-block active" data-category="week-plus">
+            <h3 class="category-section-title">📅 1 Week+ Backup Power</h3>
+            
+            <!-- 主推产品 -->
+            <div class="featured-layout">
+                <div class="featured-product">
+                    <div class="featured-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-58%</span>
+                            <span class="badge badge-popular">⭐ Most Popular</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="F3800 Plus" class="featured-image">
+                    </div>
+                    
+                    <div class="featured-info">
+                        <div>
+                            <div class="product-category">1 WEEK+ KIT</div>
+                            <h3 class="featured-title">Anker SOLIX F3800 Plus</h3>
+                        </div>
+
+                        <div class="featured-specs-grid">
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Capacity</span>
+                                <span class="featured-spec-value">3,840Wh</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Max Output</span>
+                                <span class="featured-spec-value">6,000W</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Runs Fridge</span>
+                                <span class="featured-spec-value">48+ Hours</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Recharge</span>
+                                <span class="featured-spec-value">1.5 Hours</span>
+                            </div>
+                        </div>
+
+                        <div class="featured-price-row">
+                            <span class="featured-price-current">$1,699</span>
+                            <span class="featured-price-original">$3,999</span>
+                        </div>
+                        <span class="price-save">💰 Save $2,300</span>
+
+                        <div class="featured-actions">
+                            <button class="btn-featured-primary">🛒 Add to Cart</button>
+                            <a href="#" class="btn-featured-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 其他产品 -->
+                <div class="other-products-grid">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-55%</span>
+                                <span class="badge badge-value">💎 Value</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="F2000" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1 WEEK+</div>
+                            <h3 class="product-name">Anker F2000</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">2,048Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">2,400W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$899</span>
+                                <span class="price-original">$1,999</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-52%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="C1000" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1 WEEK+</div>
+                            <h3 class="product-name">Anker C1000</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">1,056Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">1,800W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$699</span>
+                                <span class="price-original">$1,449</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-50%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="F2000 Pro" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1 WEEK+</div>
+                            <h3 class="product-name">Anker F2000 Pro</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">2,400Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">3,000W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$1,099</span>
+                                <span class="price-original">$2,199</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-48%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="C1000 Bundle" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1 WEEK+</div>
+                            <h3 class="product-name">C1000 Bundle</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">1,056Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">1,800W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$849</span>
+                                <span class="price-original">$1,649</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3-5 Days Backup 板块 -->
+        <div class="product-category-block" data-category="3-5days">
+            <h3 class="category-section-title">🏠 3-5 Days Backup Power</h3>
+            
+            <!-- 主推产品 -->
+            <div class="featured-layout">
+                <div class="featured-product">
+                    <div class="featured-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-50%</span>
+                            <span class="badge badge-popular">⭐ Top Rated</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="767" class="featured-image">
+                    </div>
+                    
+                    <div class="featured-info">
+                        <div>
+                            <div class="product-category">3-5 DAYS BACKUP</div>
+                            <h3 class="featured-title">Anker 767 PowerHouse</h3>
+                        </div>
+
+                        <div class="featured-specs-grid">
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Capacity</span>
+                                <span class="featured-spec-value">2,048Wh</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Max Output</span>
+                                <span class="featured-spec-value">2,400W</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Runs Laptop</span>
+                                <span class="featured-spec-value">30+ Times</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Lifespan</span>
+                                <span class="featured-spec-value">3,000 Cycles</span>
+                            </div>
+                        </div>
+
+                        <div class="featured-price-row">
+                            <span class="featured-price-current">$999</span>
+                            <span class="featured-price-original">$1,999</span>
+                        </div>
+                        <span class="price-save">💰 Save $1,000</span>
+
+                        <div class="featured-actions">
+                            <button class="btn-featured-primary">🛒 Add to Cart</button>
+                            <a href="#" class="btn-featured-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 其他产品 -->
+                <div class="other-products-grid">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-48%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="757" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">3-5 DAYS</div>
+                            <h3 class="product-name">Anker 757</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">1,229Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">1,500W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$519</span>
+                                <span class="price-original">$999</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-45%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="555" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">3-5 DAYS</div>
+                            <h3 class="product-name">Anker 555</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">1,024Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">1,000W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$449</span>
+                                <span class="price-original">$819</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-47%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="767 Pro" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">3-5 DAYS</div>
+                            <h3 class="product-name">Anker 767 Pro</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">2,400Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">2,800W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$1,149</span>
+                                <span class="price-original">$2,169</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-43%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="555 Bundle" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">3-5 DAYS</div>
+                            <h3 class="product-name">Anker 555 Bundle</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">1,024Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">1,000W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$549</span>
+                                <span class="price-original">$969</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1-2 Days Power 板块 -->
+        <div class="product-category-block" data-category="1-2days">
+            <h3 class="category-section-title">⚡ 1-2 Days Power - Portable & Quick</h3>
+            
+            <!-- 主推产品 -->
+            <div class="featured-layout">
+                <div class="featured-product">
+                    <div class="featured-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-40%</span>
+                            <span class="badge badge-value">🎯 Entry Level</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="535" class="featured-image">
+                    </div>
+                    
+                    <div class="featured-info">
+                        <div>
+                            <div class="product-category">1-2 DAYS POWER</div>
+                            <h3 class="featured-title">Anker 535 Portable Power Station</h3>
+                        </div>
+
+                        <div class="featured-specs-grid">
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Capacity</span>
+                                <span class="featured-spec-value">512Wh</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Max Output</span>
+                                <span class="featured-spec-value">500W</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Runs Phone</span>
+                                <span class="featured-spec-value">40+ Charges</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="featured-spec-label">Weight</span>
+                                <span class="featured-spec-value">16.8 lbs</span>
+                            </div>
+                        </div>
+
+                        <div class="featured-price-row">
+                            <span class="featured-price-current">$299</span>
+                            <span class="featured-price-original">$499</span>
+                        </div>
+                        <span class="price-save">💰 Save $200</span>
+
+                        <div class="featured-actions">
+                            <button class="btn-featured-primary">🛒 Add to Cart</button>
+                            <a href="#" class="btn-featured-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 其他产品 -->
+                <div class="other-products-grid">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-35%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="521" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1-2 DAYS</div>
+                            <h3 class="product-name">Anker 521</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">256Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">200W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$179</span>
+                                <span class="price-original">$275</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-38%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="335" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1-2 DAYS</div>
+                            <h3 class="product-name">Anker 335</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">288Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">300W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$199</span>
+                                <span class="price-original">$319</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-42%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="535 Pro" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1-2 DAYS</div>
+                            <h3 class="product-name">Anker 535 Pro</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">640Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">600W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$349</span>
+                                <span class="price-original">$599</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <div class="product-badges">
+                                <span class="badge badge-discount">-36%</span>
+                            </div>
+                            <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="521 Bundle" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">1-2 DAYS</div>
+                            <h3 class="product-name">Anker 521 Bundle</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Capacity</span>
+                                    <span class="spec-value">256Wh</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Output</span>
+                                    <span class="spec-value">200W</span>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-current">$229</span>
+                                <span class="price-original">$359</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-add-cart">🛒 Add</button>
+                                <a href="#" class="btn-learn-more">Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 对比表 -->
+    <section class="comparison-section" id="comparison">
+        <div class="section-header">
+            <h2 class="section-title">⚖️ Compare & Choose Your Perfect Match</h2>
+            <p class="section-subtitle">Quick comparison to help you decide</p>
+        </div>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>521 (Entry)</th>
+                        <th>757 (Best Value)</th>
+                        <th>F3800 (Premium)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-feature">💰 Price</td>
+                        <td>$179</td>
+                        <td class="table-highlight">$519 ⭐</td>
+                        <td>$1,699</td>
+                    </tr>
+                    <tr>
+                        <td class="table-feature">🔋 Capacity</td>
+                        <td>256Wh</td>
+                        <td>1,229Wh</td>
+                        <td class="table-highlight">3,840Wh ⭐</td>
+                    </tr>
+                    <tr>
+                        <td class="table-feature">⚡ Max Output</td>
+                        <td>200W</td>
+                        <td>1,500W</td>
+                        <td class="table-highlight">6,000W ⭐</td>
+                    </tr>
+                    <tr>
+                        <td class="table-feature">🏕️ Best For</td>
+                        <td>Day Trips</td>
+                        <td class="table-highlight">Weekend Camping ⭐</td>
+                        <td>Whole Home</td>
+                    </tr>
+                    <tr>
+                        <td class="table-feature">📺 Run TV</td>
+                        <td>3-4 hours</td>
+                        <td class="table-highlight">10-12 hours ⭐</td>
+                        <td>40+ hours</td>
+                    </tr>
+                    <tr>
+                        <td class="table-feature">⚖️ Weight</td>
+                        <td class="table-highlight">8.4 lbs ⭐</td>
+                        <td>43.9 lbs</td>
+                        <td>120 lbs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Home Energy Systems 区域 -->
+    <section class="products-section" id="home-energy" style="background: white;">
+        <div class="section-header">
+            <h2 class="section-title">🏠 Home Energy Systems</h2>
+            <p class="section-subtitle">Whole home backup with solar integration</p>
+        </div>
+
+        <!-- HES 主推产品 1+4布局 -->
+        <div class="featured-layout">
+            <div class="featured-product">
+                <div class="featured-image-wrapper">
+                    <div class="product-badges">
+                        <span class="badge badge-discount">-26%</span>
+                        <span class="badge badge-popular">🏠 Whole Home</span>
+                    </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/20260302-095722_1000x.png?v=1772416985" alt="Anker SOLIX E10" class="featured-image">
+                </div>
+                
+                <div class="featured-info">
+                    <div>
+                        <div class="product-category">HOME ENERGY SYSTEM</div>
+                        <h3 class="featured-title">Anker SOLIX E10 Home Energy System</h3>
+                    </div>
+
+                    <div class="featured-specs-grid">
+                        <div class="featured-spec">
+                            <span class="featured-spec-label">Capacity</span>
+                            <span class="featured-spec-value">10kWh</span>
+                        </div>
+                        <div class="featured-spec">
+                            <span class="featured-spec-label">Max Output</span>
+                            <span class="featured-spec-value">7,600W</span>
+                        </div>
+                        <div class="featured-spec">
+                            <span class="featured-spec-label">Backup Time</span>
+                            <span class="featured-spec-value">2-3 Days</span>
+                        </div>
+                        <div class="featured-spec">
+                            <span class="featured-spec-label">Warranty</span>
+                            <span class="featured-spec-value">10 Years</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-price-row">
+                        <span class="featured-price-current">$4,299</span>
+                        <span class="featured-price-original">$5,799</span>
+                    </div>
+                    <span class="price-save">💰 Save $1,500</span>
+
+                    <div class="featured-actions">
+                        <button class="btn-featured-primary">📞 Get Quote</button>
+                        <a href="#" class="btn-featured-secondary">Schedule Consult</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 其他产品 -->
+            <div class="other-products-grid">
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-28%</span>
+                            <span class="badge badge-value">💎 Bundle</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/20260302-095722_1000x.png?v=1772416985" alt="E10 Solar Bundle" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">HES BUNDLE</div>
+                        <h3 class="product-name">E10 + Solar Panel Kit</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">System</span>
+                                <span class="spec-value">10kWh + 4kW</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Solar</span>
+                                <span class="spec-value">8 Panels</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$6,499</span>
+                            <span class="price-original">$8,999</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-add-cart">📞 Quote</button>
+                            <a href="#" class="btn-learn-more">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-25%</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/20260302-095722_1000x.png?v=1772416985" alt="E10 Lite" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">HOME ENERGY</div>
+                        <h3 class="product-name">E10 Lite System</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Capacity</span>
+                                <span class="spec-value">7.5kWh</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">5,000W</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$3,599</span>
+                            <span class="price-original">$4,799</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-add-cart">📞 Quote</button>
+                            <a href="#" class="btn-learn-more">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-30%</span>
+                            <span class="badge badge-popular">⭐ Popular</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/20260302-095722_1000x.png?v=1772416985" alt="E10 Pro" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">HOME ENERGY</div>
+                        <h3 class="product-name">E10 Pro System</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Capacity</span>
+                                <span class="spec-value">15kWh</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">10,000W</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$6,999</span>
+                            <span class="price-original">$9,999</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-add-cart">📞 Quote</button>
+                            <a href="#" class="btn-learn-more">Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-22%</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/20260302-095722_1000x.png?v=1772416985" alt="E10 Expansion" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">EXPANSION</div>
+                        <h3 class="product-name">E10 Battery Expansion</h3>
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Add Capacity</span>
+                                <span class="spec-value">+5kWh</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Compatible</span>
+                                <span class="spec-value">E10 Series</span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$1,899</span>
+                            <span class="price-original">$2,449</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-add-cart">📞 Quote</button>
+                            <a href="#" class="btn-learn-more">Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories 配件区域 -->
+    <section class="products-section" id="accessories" style="background: #f8f8f8; padding: 4rem 2rem;">
+        <div class="section-header">
+            <h2 class="section-title">🔌 Essential Accessories</h2>
+            <p class="section-subtitle">Expand your power system capabilities</p>
+        </div>
+
+        <!-- 配件板块 1+4 Layout -->
+        <div class="product-category-block" style="max-width: 1400px; margin: 0 auto;">
+
+            <!-- 主推配件 -->
+            <div class="featured-layout">
+                <div class="featured-product">
+                    <div class="featured-image-wrapper">
+                        <div class="product-badges">
+                            <span class="badge badge-discount">-25%</span>
+                        </div>
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="Expansion Battery" class="featured-image">
+                    </div>
+
+                    <div class="featured-info">
+                        <div>
+                            <div class="product-category">EXPANSION BATTERY</div>
+                            <h3 class="featured-title">Anker SOLIX BP3800 Expansion Battery</h3>
+                        </div>
+
+                        <div class="featured-specs-grid">
+                            <div class="featured-spec">
+                                <span class="spec-label">Capacity</span>
+                                <span class="spec-value">3.84kWh</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="spec-label">Expandable</span>
+                                <span class="spec-value">Up to 6 Units</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="spec-label">Compatibility</span>
+                                <span class="spec-value">F3800 Series</span>
+                            </div>
+                            <div class="featured-spec">
+                                <span class="spec-label">Warranty</span>
+                                <span class="spec-value">5 Years</span>
+                            </div>
+                        </div>
+
+                        <div class="featured-price-section">
+                            <div class="featured-pricing">
+                                <span class="featured-old-price">$2,999</span>
+                                <span class="featured-price">$2,249</span>
+                                <span class="featured-save">Save $750</span>
+                            </div>
+                            <button class="featured-cta">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 其他4个配件产品 -->
+            <div class="products-grid">
+                <!-- 配件 1 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="Solar Panel" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">531 Solar Panel (200W)</h3>
+                        <div class="product-specs">
+                            <span class="spec-item">200W Power</span>
+                            <span class="spec-item">Portable</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="old-price">$599</span>
+                            <span class="current-price">$449</span>
+                        </div>
+                        <button class="product-cta">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- 配件 2 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="Transfer Switch" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Home Transfer Switch</h3>
+                        <div class="product-specs">
+                            <span class="spec-item">Auto Switch</span>
+                            <span class="spec-item">Pro Install</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="old-price">$399</span>
+                            <span class="current-price">$299</span>
+                        </div>
+                        <button class="product-cta">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- 配件 3 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="Smart Panel" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">SOLIX Smart Panel</h3>
+                        <div class="product-specs">
+                            <span class="spec-item">App Control</span>
+                            <span class="spec-item">F3800 Ready</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="old-price">$799</span>
+                            <span class="current-price">$599</span>
+                        </div>
+                        <button class="product-cta">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- 配件 4 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://cdn.shopify.com/s/files/1/0854/3820/2186/files/Frame_2121238429_1_3838x.png?v=1762740273" alt="Extension Cable" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Extension Cable Kit</h3>
+                        <div class="product-specs">
+                            <span class="spec-item">10m Length</span>
+                            <span class="spec-item">All Models</span>
+                        </div>
+                        <div class="product-pricing">
+                            <span class="old-price">$99</span>
+                            <span class="current-price">$74</span>
+                        </div>
+                        <button class="product-cta">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 信任标签区 -->
+    <section class="trust-section">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <div class="trust-icon">🚚</div>
+                <h3 class="trust-title">Free Shipping</h3>
+                <p class="trust-desc">On orders over $99</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">🛡️</div>
+                <h3 class="trust-title">5-Year Warranty</h3>
+                <p class="trust-desc">Industry-leading protection</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">🔄</div>
+                <h3 class="trust-title">30-Day Returns</h3>
+                <p class="trust-desc">Hassle-free refunds</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">💳</div>
+                <h3 class="trust-title">Flexible Payments</h3>
+                <p class="trust-desc">Affirm & Klarna available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Products</h3>
+                <a href="#">Power Stations</a>
+                <a href="#">Home Energy</a>
+                <a href="#">Solar Panels</a>
+                <a href="#">Accessories</a>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Warranty</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Find a Dealer</a>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#">Sustainability</a>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Anker SOLIX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 倒计时功能
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date(now);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+
+            const diff = tomorrow - now;
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').textContent =
+                `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // 分类显示功能
+        function showCategory(category) {
+            if (category === 'portable') {
+                // 滚动到Portable Power Stations区域
+                const productsSection = document.getElementById('products');
+                productsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                // Home Energy - 滚动到HES区域
+                const hesSection = document.getElementById('home-energy');
+                hesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // 产品过滤功能 - 滚动到对应product-category-block
+        function filterProducts(category) {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const targetBlock = document.querySelector(`.product-category-block[data-category="${category}"]`);
+
+            // 更新按钮状态
+            filterBtns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // 滚动到对应的分类区块
+            if (targetBlock) {
+                const offset = 80; // 考虑sticky header高度
+                const elementPosition = targetBlock.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // 侧边导航滚动功能
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const offset = 80;
+                const elementPosition = section.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
+                // 更新active状态
+                document.querySelectorAll('.sidebar-nav-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                event.target.classList.add('active');
+            }
+        }
+
+        // 控制侧边导航显示/隐藏
+        window.addEventListener('scroll', () => {
+            const sidebarNav = document.getElementById('sidebarNav');
+            const heroSection = document.querySelector('.hero');
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+
+            if (window.pageYOffset > heroBottom) {
+                sidebarNav.classList.add('visible');
+            } else {
+                sidebarNav.classList.remove('visible');
+            }
+
+            // 根据滚动位置更新active状态
+            const sections = ['products', 'home-energy'];
+            let currentSection = '';
+
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 200 && rect.bottom >= 200) {
+                        currentSection = sectionId;
+                    }
+                }
+            });
+
+            if (currentSection) {
+                document.querySelectorAll('.sidebar-nav-btn').forEach(btn => {
+                    if (btn.dataset.section === currentSection) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            }
+
+            // 根据滚动位置更新产品分类tab的active状态
+            const productCategories = ['week-plus', '3-5days', '1-2days'];
+            let currentCategory = '';
+
+            productCategories.forEach(categoryId => {
+                const categoryBlock = document.querySelector(`.product-category-block[data-category="${categoryId}"]`);
+                if (categoryBlock) {
+                    const rect = categoryBlock.getBoundingClientRect();
+                    // 当区块在视口上半部分时，认为是当前活跃区块
+                    if (rect.top <= 300 && rect.bottom >= 150) {
+                        currentCategory = categoryId;
+                    }
+                }
+            });
+
+            if (currentCategory) {
+                const filterBtns = document.querySelectorAll('.filter-btn');
+                filterBtns.forEach(btn => {
+                    // 通过onclick属性判断按钮对应的分类
+                    const onclickAttr = btn.getAttribute('onclick');
+                    if (onclickAttr && onclickAttr.includes(`'${currentCategory}'`)) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
